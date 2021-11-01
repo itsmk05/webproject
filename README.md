@@ -1,4 +1,4 @@
-This will be the disappointment from me to not complete the project but i have tried my best and also i have potential to do better than this.
+i was unable to complete the project within time but i have tried my best and also i have potential to do better than this.
 I don't know about pycharm so it took too much time to complete the setup after that i aslo dont know how to use the pycharm and how am i supposed to create the project this is totally time consuming process. And after i have installed Django in pycharm with the help of PIP. 
 Then i have created the "templetes" Repository beacuse in pycharm it will this repository first then remaining ones.In this repository i have create a "home.html" file so i could write html code in it.
 i have tried simple program to display the word hii using "HttpRespose" method and it worked. for this i have used "path" & "Views" package.
