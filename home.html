@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-PROJECT</title>
+</head>
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    input[type=text], input[type=password]{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+    input[type=text]:focus, input[type=password]:focus{
+        background-color: #ddd;
+        outline: none;
+    }
+    button{
+        background-color: dodgerblue;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .cancelbtn{
+        padding: 14px 20px;
+        background-color: #f44333;
+    }
+    .container{
+        padding: 16px;
+
+    }
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #474e5d;
+        padding-top: 50px;
+    }
+    .modal-content{
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid#888;
+        width: 80%;
+
+    }
+    hr{
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+    .close{
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1 ;
+    }
+    .close:hover,
+    .close:focus{
+        color: #f44333;
+        cursor: pointer;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    @media screen and (max-width: 300px){
+        .cancelbtn, .signupbtn{
+            width: 100%;
+        }
+    }
+    .lib{
+        margin: auto;
+        width: 50%;
+        padding: 100px;
+        font-weight: bold;
+    }
+
+
+    button{
+        background-color: #04AA6D;
+        color: white;
+        padding:14px 20px;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover{
+        opacity: 0.8;
+    }
+    .cancelbtn1{
+        width: auto;
+        padding:14px 20px;
+        background-color: #f44336;
+    }
+    .imgcontainer{
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+    img.avatar{
+        width: 40%;
+        border-radius: 50%;
+    }
+    .container1{
+        padding: 16px;
+    }
+    span.psw{
+        float: right;
+        padding-top: 16px;
+    }
+    .modal1{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 60px;
+    }
+    .modal-content{
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border:1px solid #888;
+        width: 80%;
+    }
+    .close{
+        position:absolute;
+        right: 25px;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .homebtn{
+        margin-left: 670px;
+    }
+    .homebtn1{
+        margin-left: 680px;
+    }
+    .txt{
+        margin-left: 650px;
+    }
+    .txt1{
+        margin-left: 660px;
+    }
+    .cancelbtn1 {
+            width: 100%;
+        }
+
+    .close:hover,
+    .close:focus{
+        color: red;
+        cursor: pointer;
+    }
+    .animate{
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s;
+    }
+    @-webkit-keyframes animatezoom {
+        from{-webkit-transform: scale(0)}
+        to{-webkit-transform: scale(1)}
+
+    }
+
+    @media  screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+
+
+    }
+
+
+</style>
+<body>
+<h1 class="lib">Library Management System</h1>
+<h2 class="txt">Signup Form</h2>
+<button class="homebtn" onclick=" document.getElementById('id01').style.display='block'" style="width: auto;">Sign Up</button>
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close modal">&times;
+    </span>
+    <form class="modal-content" action="#">
+        <div class="container">
+            <h1>Sign UP</h1>
+            <p>Please fill the information to create an account. </p>
+            <hr>
+            <label for="email"><b> Email </b></label>
+            <input type="text" placeholder="Enter Email/User Name" name="Email" required>
+            <label for="psw-repeat"><b> Password </b></label>
+            <input type="password" placeholder="Password" name="psw-repeat" required>
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px">Remember Me
+            </label>
+
+            <p>By Creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<h2 class="txt1">Login Form</h2>
+<button class="homebtn1" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+<div id="id02" class="modal1">
+
+    <form class="modal-content animate" action="#" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="close modal">&times;</span>
+                <h1>Login Form</h1>
+            </div>
+            <div class ="container1">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label>
+                     <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px">Remember Me
+                </label>
+                <button type="submit">Login</button>
+
+            </div>
+
+           <div class="container1" style="background-color: #f1f1f1"></div>
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">Password?</a> </span>
+
+    </form>
+</div>
+
+<script>
+    var modal=document.getElementById('id01');
+    window.onclick=function(event){
+        if (event.target==modal){
+            modal.style.display='none';
+        }
+    }
+
+
+    var modal1 = document.getElementById('id02');
+    window.onclick = function (event){
+        if(event.target == modal1){
+            modal1.style.display='none';
+        }
+    }
+</script>
+</body>
+</html>
